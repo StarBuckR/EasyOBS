@@ -17,7 +17,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class WebController {
+public class WebController{
     String username;
     String password;
     Connection.Response loginForm;
@@ -62,7 +62,6 @@ public class WebController {
         doc2 = connectToLink("https://obs.sdu.edu.tr/Birimler/Ogrenci/DonemDersleri.aspx", loginForm);
         
         Element e = doc2.getElementById("ctl00_ContentPlaceHolder1_DersGrid");
-        Element elements[] = new Element[5];
         createFrame(e, gno);
     }
     

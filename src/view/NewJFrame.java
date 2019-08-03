@@ -142,12 +142,11 @@ public class NewJFrame extends javax.swing.JFrame {
     private void usernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameFieldActionPerformed
-
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
             WebController wb = new WebController(usernameField.getText(), passwordField.getText());
             if(jCheckBox1.isSelected()){
-                System.out.println("hele hele");
                 rm.writeData(usernameField.getText(), passwordField.getText());
             }
             this.hide();
